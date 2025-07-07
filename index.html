@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEC Survivor Pool Dashboard</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Firebase SDK -->
+    <script defer src="/__/firebase/11.8.1/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/11.8.1/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/11.8.1/firebase-firestore-compat.js"></script>
+    <!-- Initialize Firebase SDK -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <!-- App JavaScript -->
+    <script defer src="js/app.js"></script>
+    <!-- Ticker JavaScript -->
+    <script defer src="js/ticker.js"></script>
+</head>
+<body>
+    <header class="dashboard-header">
+        <img src="assets/images/sec-logo.png" alt="SEC Logo Left" class="logo left">
+        <h1>SEC Survivor Pool Dashboard</h1>
+        <img src="assets/images/sec-logo.png" alt="SEC Logo Right" class="logo right">
+        <nav>
+            <a href="#">Back to Dashboard</a>
+            <button id="logout-btn">Logout</button>
+        </nav>
+    </header>
+    <main>
+        <section class="dashboard-panel">
+            <h2 id="welcome-message">Welcome, [Username]</h2>
+            <p id="user-status">Status: Alive</p>
+            <p id="current-week">Week: 1</p>
+            <div class="dashboard-buttons">
+                <button id="submit-pick-btn">Submit Pick</button>
+                <button id="view-board-btn">View Board</button>
+            </div>
+        </section>
+    </main>
+    <div class="ticker-container">
+        <div class="ticker" id="game-ticker"></div>
+    </div>
+    <footer>
+        <p>Admin: [Your Name] | Contact: [Email]</p>
+    </footer>
+</body>
+</html>
