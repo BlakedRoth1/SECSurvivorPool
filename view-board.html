@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEC Survivor Pool - View Board</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Firebase SDK -->
+    <script defer src="/__/firebase/11.8.1/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/11.8.1/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/11.8.1/firebase-firestore-compat.js"></script>
+    <!-- Initialize Firebase SDK -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <!-- View Board JavaScript -->
+    <script defer src="js/view-board.js"></script>
+</head>
+<body>
+    <header>
+        <img src="assets/images/sec-logo.png" alt="SEC Logo Left" class="logo left">
+        <h1>SEC Survivor Pool - View Board</h1>
+        <img src="assets/images/sec-logo.png" alt="SEC Logo Right" class="logo right">
+        <nav>
+            <a href="index.html">Back to Dashboard</a>
+            <button id="logout-btn">Logout</button>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Pick Board</h2>
+            <div class="picks-section">
+                <table id="picks-table">
+                    <thead>
+                        <tr>
+                            <th>Week</th>
+                            <!-- User headers will be dynamically added -->
+                        </tr>
+                    </thead>
+                    <tbody id="picks-table-body"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+    <div class="ticker-container">
+    <div class="ticker" id="game-ticker"></div>
+</div>
+<footer>
+    <p>Admin: [Your Name] | Contact: [Email]</p>
+</footer>
+<!-- Ticker JavaScript -->
+<script defer src="js/ticker.js"></script>
+</body>
+</html>

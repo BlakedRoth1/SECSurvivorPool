@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEC Survivor Pool - Login</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Firebase SDK -->
+    <script defer src="/__/firebase/11.8.1/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/11.8.1/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/11.8.1/firebase-firestore-compat.js"></script>
+    <!-- Initialize Firebase SDK -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <!-- Login JavaScript -->
+    <script defer src="js/login.js"></script>
+</head>
+<body class="login-page">
+    <header>
+        <h1>SEC Survivor Pool</h1>
+    </header>
+    <main>
+        <section class="login-panel">
+            <h2>Login</h2>
+            <form id="login-form">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                <button type="submit">Login</button>
+                <p id="login-error" style="color: red;"></p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Admin: [Your Name] | Contact: [Email]</p>
+    </footer>
+</body>
+</html>

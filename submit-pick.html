@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEC Survivor Pool - Submit Pick</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Firebase SDK -->
+    <script defer src="/__/firebase/11.8.1/firebase-app-compat.js"></script>
+    <script defer src="/__/firebase/11.8.1/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/11.8.1/firebase-firestore-compat.js"></script>
+    <!-- Initialize Firebase SDK -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <!-- Submit Pick JavaScript -->
+    <script defer src="js/submit-pick.js"></script>
+</head>
+<body>
+    <header>
+        <img src="assets/images/sec-logo.png" alt="SEC Logo Left" class="logo left">
+        <h1>SEC Survivor Pool - Submit Pick</h1>
+        <img src="assets/images/sec-logo.png" alt="SEC Logo Right" class="logo right">
+        <nav>
+            <a href="index.html">Back to Dashboard</a>
+            <button id="logout-btn">Logout</button>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Submit Your Pick</h2>
+            <p id="current-week">Week: 1</p>
+            <div id="selected-team">Selected Team: None</div>
+            <div class="team-sections">
+                <div class="team-section">
+                    <h3>Available</h3>
+                    <div id="available-teams" class="team-grid"></div>
+                </div>
+                <div class="team-section">
+                    <h3>Used</h3>
+                    <div id="used-teams" class="team-grid"></div>
+                </div>
+            </div>
+            <button id="submit-pick-btn">Submit Pick</button>
+            <p id="pick-error" style="color: red;"></p>
+        </section>
+    </main>
+    <div class="ticker-container">
+    <div class="ticker" id="game-ticker"></div>
+</div>
+<footer>
+    <p>Admin: [Your Name] | Contact: [Email]</p>
+</footer>
+<!-- Ticker JavaScript -->
+<script defer src="js/ticker.js"></script>
+</body>
+</html>
